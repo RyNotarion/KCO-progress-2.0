@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Protest Strike", sans-serif;
+
+    height: 100%; /* Ensure the body takes the full height */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+body {
+    background-image: url('about.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.blur-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px; /* Adjusted for better centering */
+    padding: 20px;
+        border-radius: 10px; /* Optional: add rounded corners */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Four cards in a row with spacing */
+    min-width: 250px;
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s forwards; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin for ul */
+}
+
+/* Specific styling for li within cards */
+.card ul li {
+    background-color: #eaecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Full width for list items */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.cta {
+    font-weight: bold;
+    font-size: 18px;
+    color: #27ae60;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dropdown button {
+        background-color: #007bff; /* Change to a blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
