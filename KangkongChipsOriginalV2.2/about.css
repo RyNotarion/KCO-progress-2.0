@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: "Lora", serif;
+    font-style: normal;
+}
+
+body {
+    background-image: url('kcobg.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.blur-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px; /* Adjusted for better centering */
+    padding: 20px;
+        border-radius: 10px; /* Optional: add rounded corners */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #8FD14F;
+        padding: 20px;
+    background-color: transparent;
+    margin: 10px;
+    width: calc(100% - 20px); /* Four cards in a row with spacing */
+    min-width: 300px;
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s forwards; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+h2 {
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px black;
+    
+}
+
+p {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: white;
+    margin-bottom: 15px;
+}
+.li{
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(225,225,225,0.1);
+    color: black;
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin for ul */
+}
+
+/* Specific styling for li within cards */
+.card ul li {
+    background-color: #eaecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Full width for list items */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.cta{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  
+}
+.p{
+    text-shadow: 2px 2px black;
+
+}
+.a{
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+
